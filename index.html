@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <h1 class="city-name">Weather in <span id="city"></span></h1>
+
+            <!-- User Input for Latitude and Longitude -->
+            <div class="user-input">
+                <input type="number" id="latitude" placeholder="Enter Latitude" step="any" required>
+                <input type="number" id="longitude" placeholder="Enter Longitude" step="any" required>
+                <button id="get-weather">Get Weather</button>
+            </div>
+
+            <div class="weather-info">
+                <div class="temperature">
+                    <h2 id="temp">--</h2>
+                    <span>°C</span>
+                </div>
+                <div class="description">
+                    <img id="icon" src="" alt="Weather Icon">
+                    <p id="desc">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
